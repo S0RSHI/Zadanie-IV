@@ -36,6 +36,15 @@ void closeLog(void) {
     logFile.close();
 }
 
+struct results {
+    double tot; 
+    double err; 
+    float ber;  
+    clock_t t1; 
+    clock_t t2; 
+};
+
+
 int main(int argc, char** argv) {
 
     // createFile("file1.bin", 100, 0xFF); - Create file 1

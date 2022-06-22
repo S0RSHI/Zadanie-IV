@@ -1,17 +1,3 @@
-T: Thu Jun 23 01:21:47 2022 M: Start calculate
-T: Thu Jun 23 01:21:47 2022 M: End calculate
-T: Thu Jun 23 01:21:47 2022 M: Results are: BER: 0.125 Tot: 800 Err: 100 Calc time: 0 sec 
-T: Thu Jun 23 01:24:43 2022 M: Too many arguments
-T: Thu Jun 23 01:30:23 2022 M: Start calculate
-T: Thu Jun 23 01:30:23 2022 M: End calculate
-T: Thu Jun 23 01:30:23 2022 M: Results are: BER: 0 Tot: 800 Err: 0 Calc time: 0 sec 
-T: Thu Jun 23 01:30:59 2022 M: Bads arguments
-T: Thu Jun 23 01:31:03 2022 M: Start calculate
-T: Thu Jun 23 01:31:03 2022 M: End calculate
-T: Thu Jun 23 01:31:03 2022 M: Results are: BER: 0 Tot: 800 Err: 0 Calc time: 0 sec 
-T: Thu Jun 23 01:31:33 2022 M: Bads arguments
-T: Thu Jun 23 01:31:52 2022 M: Bads arguments
-T: Thu Jun 23 01:32:04 2022 M: Bads arguments
-T: Thu Jun 23 01:32:44 2022 M: Start calculate
-T: Thu Jun 23 01:32:44 2022 M: End calculate
-T: Thu Jun 23 01:32:44 2022 M: Results are: BER: 0.125 Tot: 800 Err: 100 Calc time: 0 sec 
+T: Thu Jun 23 01:35:54 2022 M: Start calculate
+T: Thu Jun 23 01:35:54 2022 M: End calculate
+T: Thu Jun 23 01:35:54 2022 M: Results are: BER: 0 Tot: 800 Err: 0 Calc time: 0 sec 

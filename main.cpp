@@ -69,7 +69,7 @@ result calculateResult(std::string file1, std::string file2) {
     char b = 0x00;
     results.t1 = clock();
 
-    while (!f1.eof()){
+    while (!f1.eof()) {
         f1 >> a;
         f2 >> b;
         if (!f1.eof()) {
@@ -82,7 +82,15 @@ result calculateResult(std::string file1, std::string file2) {
     results.t2 = clock(); 
     return results;
 }
-
+void printResults(result results) {
+    std::stringstream message;
+    message << "Results are: " << std::endl;
+    message << "BER: " << results.ber << std::endl;
+    message << "Tot: " << results.tot << std::endl;
+    message << "Err: " << results.err << std::endl;
+    message << "Calc time: " << ((float)results.t2 - results.t1) / CLOCKS_PER_SEC << " sec " << std::endl;
+    saveLog(message.str());
+}
 
 int main(int argc, char** argv) {
 
@@ -93,8 +101,12 @@ int main(int argc, char** argv) {
     if (argc != 3) {
         saveLog("Too many arguments");
     } else {
-
+        saveLog("Start calculate");
+        result results = calculateResult(argv[1], argv[2]);
+        saveLog("End calculate");
+        printResults(results);
     }
+    closeLog();
 
     return 0;
 }

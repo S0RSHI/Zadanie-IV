@@ -90,12 +90,12 @@ void printResults(result results) {
 
 int main(int argc, char** argv) {
 
-    // createFile("file1.bin", 100, 0xFF); - Create file 1
-    // createFile("file2.bin", 100, 0xFE); - Create file 2
+    createFile("file1.bin", 100, 0xFF); // - Create file 1 for test 2
+    createFile("file2.bin", 101, 0xFE); // - Create file 2 for test 2
 
     openLog("log.txt");
     if (argc != 3) {
-        saveLog("Too many arguments");
+        saveLog("Bads arguments");
     } else {
         saveLog("Start calculate");
         result results = calculateResult(argv[1], argv[2]);

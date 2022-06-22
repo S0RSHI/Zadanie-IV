@@ -1,3 +1,4 @@
 T: Thu Jun 23 01:21:47 2022 M: Start calculate
 T: Thu Jun 23 01:21:47 2022 M: End calculate
 T: Thu Jun 23 01:21:47 2022 M: Results are: BER: 0.125 Tot: 800 Err: 100 Calc time: 0 sec 
+T: Thu Jun 23 01:24:43 2022 M: Too many arguments

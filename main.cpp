@@ -84,11 +84,7 @@ result calculateResult(std::string file1, std::string file2) {
 }
 void printResults(result results) {
     std::stringstream message;
-    message << "Results are: " << std::endl;
-    message << "BER: " << results.ber << std::endl;
-    message << "Tot: " << results.tot << std::endl;
-    message << "Err: " << results.err << std::endl;
-    message << "Calc time: " << ((float)results.t2 - results.t1) / CLOCKS_PER_SEC << " sec " << std::endl;
+    message << "Results are: BER: " << results.ber << "Tot: " << results.tot << "Err: " << results.err << "Calc time: " << ((float)results.t2 - results.t1) / CLOCKS_PER_SEC << " sec ";
     saveLog(message.str());
 }
 

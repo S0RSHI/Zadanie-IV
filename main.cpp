@@ -36,13 +36,52 @@ void closeLog(void) {
     logFile.close();
 }
 
-struct results {
+uint8_t diffBit(uint8_t n1, uint8_t n2) {
+    uint8_t x = n1 ^ n2;
+    uint8_t setBits = 0;
+    while (x > 0) {
+        setBits += x & 1;
+        x >>= 1;
+    }
+    return setBits;
+}
+
+struct result {
     double tot; 
     double err; 
     float ber;  
     clock_t t1; 
     clock_t t2; 
 };
+
+result calculateResult(std::string file1, std::string file2) {
+    std::fstream f1, f2; 
+    result results;
+    results.t1 = 0;
+    results.t2 = 0;
+    results.ber = 0;
+    results.err = 0;
+    results.tot = 0;
+
+    f1.open(file1.c_str(), std::ios::binary | std::ios::in);
+    f2.open(file2.c_str(), std::ios::binary | std::ios::in);
+    char a = 0x00;
+    char b = 0x00;
+    results.t1 = clock();
+
+    while (!f1.eof()){
+        f1 >> a;
+        f2 >> b;
+        if (!f1.eof()) {
+            results.err += diffBit(a, b); 
+            results.tot += 8;
+        }
+    }
+
+    results.ber = (float)results.err / results.tot; 
+    results.t2 = clock(); 
+    return results;
+}
 
 
 int main(int argc, char** argv) {
@@ -53,6 +92,8 @@ int main(int argc, char** argv) {
     openLog("log.txt");
     if (argc != 3) {
         saveLog("Too many arguments");
+    } else {
+
     }
 
     return 0;

@@ -91,7 +91,7 @@ void printResults(result results) {
 int main(int argc, char** argv) {
 
     // createFile("file1.bin", 100, 0xFE);
-    // createFile("file2.bin", 100, 0xFE);
+    // createFile("file2.bin", 1, 0xFF);
 
     openLog("log.txt");
     if (argc != 3) {

@@ -4,3 +4,6 @@ T: Thu Jun 23 01:35:54 2022 M: Results are: BER: 0 Tot: 800 Err: 0 Calc time: 0 
 T: Thu Jun 23 01:37:37 2022 M: Start calculate
 T: Thu Jun 23 01:37:37 2022 M: End calculate
 T: Thu Jun 23 01:37:37 2022 M: Results are: BER: 0.125 Tot: 800 Err: 100 Calc time: 0 sec 
+T: Thu Jun 23 01:50:56 2022 M: Start calculate
+T: Thu Jun 23 01:51:07 2022 M: End calculate
+T: Thu Jun 23 01:51:07 2022 M: Results are: BER: 0.125 Tot: 3.2e+09 Err: 4e+08 Calc time: 10.805 sec 

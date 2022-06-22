@@ -90,8 +90,8 @@ void printResults(result results) {
 
 int main(int argc, char** argv) {
 
-    // createFile("file1.bin", 100, 0xFE);
-    // createFile("file2.bin", 1, 0xFF);
+    // createFile("file1.bin", 400000000, 0xFF);
+    // createFile("file2.bin", 400000000, 0xFE);
 
     openLog("log.txt");
     if (argc != 3) {
